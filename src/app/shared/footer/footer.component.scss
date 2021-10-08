@@ -1,0 +1,18 @@
+@import "../../../scss/variables.scss";
+
+.footer {
+  background-color: $mainColor;
+}
+
+// filter to change color of black image to secondary color
+img {
+  width: 48px;
+  height: 48px;
+  filter: invert(59%) sepia(43%) saturate(2727%) hue-rotate(195deg)
+    brightness(100%) contrast(94%);
+}
+
+img:hover {
+  filter: invert(43%) sepia(73%) saturate(395%) hue-rotate(180deg)
+    brightness(88%) contrast(93%);
+}

@@ -1,0 +1,27 @@
+@import "../../../scss/variables.scss";
+
+.title {
+  color: $darkestMainColor;
+  font-family: "Courgette", cursive;
+}
+
+.big-text {
+  font-size: 2rem;
+}
+
+.container {
+  width: 980px;
+  margin: 1rem auto;
+}
+
+.navigation {
+  span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  span:hover {
+    color: $darkerMainColor;
+  }
+}
