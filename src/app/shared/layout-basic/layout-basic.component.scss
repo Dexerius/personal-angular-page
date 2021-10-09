@@ -1,9 +1,25 @@
-.container,
+@import "../../../scss/variables.scss";
+
+.container{
+  min-height: 100%;
+}
+
 main {
-  height: 100%;
+  height: fit-content;
+  width: $pageWidth;
+  margin-bottom: auto;
+  /* min-height: calc(100% - 128px); */
   width: 100%;
 }
 
 app-footer, app-header {
     width: 100%;
+}
+
+app-header {
+  height: 74px;
+}
+
+app-footer {
+  height: 54px;
 }

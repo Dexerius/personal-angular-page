@@ -1,0 +1,16 @@
+<div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="center center">
+  <div
+    *ngFor="let anime of animes | async"
+    class="anime-block"
+    fxLayout="row"
+    (click)="onAnimeClick(anime.url)"
+    (keyup.enter)="onAnimeClick(anime.url)"
+    tabindex="0"
+  >
+    <img src="{{ anime.image_url }}" alt="{{ anime.title + ' front image' }}" />
+    <div fxLayout="column" fxLayoutGap="1rem">
+      <div>{{ anime.title }}</div>
+      <div *ngIf="anime.score">Score {{ anime.score }}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+@import "../../scss/variables.scss";
+
+.container {
+  max-width: $pageWidth;
+  margin: 1rem auto;
+
+  span{
+      font-size: 1.5rem;
+      /* font-family: "Courgette", cursive; */
+  }
+}
+
+app-layout-basic {
+  height: 100%;
+  display: block;
+}

@@ -10,8 +10,13 @@
 }
 
 .container {
-  width: 980px;
-  margin: 1rem auto;
+  max-width: $pageWidth;
+  margin: auto;
+  height: 100%;
+
+  div{
+      margin: 0 1rem;
+  }
 }
 
 .navigation {
