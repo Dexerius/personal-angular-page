@@ -26,7 +26,8 @@
     cursor: pointer;
   }
 
-  span:hover {
+  span:hover,
+  span:focus {
     color: $darkerMainColor;
   }
 }

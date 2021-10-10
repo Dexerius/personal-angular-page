@@ -5,9 +5,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutBasicComponent } from './layout-basic/layout-basic.component';
 import { MaterialModule } from '../material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @NgModule({
-  imports: [FlexLayoutModule, MaterialModule],
+  imports: [FlexLayoutModule, MaterialModule, RouterModule, ClipboardModule],
   declarations: [FooterComponent, HeaderComponent, LayoutBasicComponent],
   exports: [
     FooterComponent,
@@ -15,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     FlexLayoutModule,
     LayoutBasicComponent,
     HttpClientModule,
+    ClipboardModule,
   ],
 })
 export class SharedModule {}

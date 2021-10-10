@@ -5,8 +5,14 @@
     <span class="title">personal page</span>
   </div>
   <div fxLayoutGap="1rem" class="navigation">
-      <span>Home</span>
-      <span>Contact</span>
+    <span tabindex="0" (click)="onNavClick('')" (keyup.enter)="onNavClick('')"
+      >Home</span
+    >
+    <span
+      tabindex="0"
+      (click)="onNavClick('contact')"
+      (keyup.enter)="onNavClick('contact')"
+      >Contact</span
+    >
   </div>
 </div>
-

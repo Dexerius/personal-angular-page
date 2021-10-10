@@ -17,7 +17,7 @@ export class MyAnimeListService {
       )
       .pipe(
         map((res) => (res.anime as []).slice(0, 6)),
-        delay(3000) // to show an awesome loading animation
+        delay(1500) // to show an awesome loading animation
       );
   }
 }

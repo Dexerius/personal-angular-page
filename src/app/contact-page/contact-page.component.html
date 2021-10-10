@@ -1,0 +1,51 @@
+<app-layout-basic>
+  <div class="container">
+    <span
+      tabindex="0"
+      (click)="
+        copyToClipboard(
+          owner.academicTitle + ' ' + owner.firstName + ' ' + owner.lastName
+        )
+      "
+      (keyup.enter)="
+        copyToClipboard(
+          owner.academicTitle + ' ' + owner.firstName + ' ' + owner.lastName
+        )
+      "
+    >
+      <mat-icon>account_box</mat-icon>
+      {{ owner.academicTitle }} {{ owner.firstName }} {{ owner.lastName }}
+    </span>
+    <span
+      tabindex="0"
+      (click)="copyToClipboard(owner.email)"
+      (keyup.enter)="copyToClipboard(owner.email)"
+      ><mat-icon>email</mat-icon>{{ owner.email }}</span
+    >
+    <span
+      tabindex="0"
+      (click)="copyToClipboard(owner.phone)"
+      (keyup.enter)="copyToClipboard(owner.phone)"
+      ><mat-icon>phone</mat-icon>{{ owner.phone }}</span
+    >
+    <span
+      tabindex="0"
+      (click)="copyToClipboard(facebook)"
+      (keyup.enter)="copyToClipboard(facebook)"
+    >
+      <img src="./assets/logos/facebook.svg" />{{ facebook }}</span
+    >
+    <span
+      tabindex="0"
+      (click)="copyToClipboard(instagram)"
+      (keyup.enter)="copyToClipboard(instagram)"
+      ><img src="./assets/logos/instagram.svg" />{{ instagram }}</span
+    >
+    <span
+      tabindex="0"
+      (click)="copyToClipboard(github)"
+      (keyup.enter)="copyToClipboard(github)"
+      ><img src="./assets/logos/github.svg" />{{ github }}</span
+    >
+  </div>
+</app-layout-basic>

@@ -1,0 +1,29 @@
+@import "../../scss/variables.scss";
+
+.container {
+  max-width: $pageWidth;
+  margin: 1rem auto;
+  padding: 0 1rem;
+
+  span {
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  span:hover,
+  span:focus {
+    color: $mainColor;
+    img {
+      filter: invert(27%) sepia(7%) saturate(3917%) hue-rotate(181deg)
+        brightness(90%) contrast(96%);
+    }
+  }
+}

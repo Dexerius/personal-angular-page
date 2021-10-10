@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { facebook, github, instagram } from 'src/app/utils/hrefs';
+import { onFacebook, onInstagram, onGithub } from 'src/app/utils/hrefs';
 
 @Component({
   selector: 'app-footer',
@@ -7,15 +7,7 @@ import { facebook, github, instagram } from 'src/app/utils/hrefs';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  onFacebook(): void {
-    window.open(facebook, '_blank');
-  }
-
-  onInstagram(): void {
-    window.open(instagram, '_blank');
-  }
-
-  onGithub(): void {
-    window.open(github, '_blank');
-  }
+  public onFacebook = onFacebook;
+  public onInstagram = onInstagram;
+  public onGithub = onGithub;
 }

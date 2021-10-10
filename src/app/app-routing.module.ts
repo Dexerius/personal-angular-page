@@ -9,6 +9,13 @@ const routes: Routes = [
         (m) => m.LandingPageModule
       ),
   },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./contact-page/contact-page.module').then(
+        (m) => m.ContactPageModule
+      ),
+  },
 ];
 
 @NgModule({
