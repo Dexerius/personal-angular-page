@@ -10,4 +10,29 @@ export class FooterComponent {
   public onFacebook = onFacebook;
   public onInstagram = onInstagram;
   public onGithub = onGithub;
+  readonly socials: {
+    path: string;
+    desc: string;
+    alt: string;
+    action: () => void;
+  }[] = [
+    {
+      path: './assets/logos/facebook.svg',
+      desc: 'Visit my facebook page',
+      alt: 'redirect to facebook page',
+      action: onFacebook,
+    },
+    {
+      path: './assets/logos/instagram.svg',
+      desc: 'Visit my instagram page',
+      alt: 'redirect to instagram page',
+      action: onInstagram,
+    },
+    {
+      path: './assets/logos/github.svg',
+      desc: 'Visit my github page',
+      alt: 'redirect to github page',
+      action: onGithub,
+    },
+  ];
 }

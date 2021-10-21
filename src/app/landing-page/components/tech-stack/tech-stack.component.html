@@ -1,10 +1,15 @@
-<span fxLayoutGap="0.5rem">
-  <img src="./assets/logos/angular.svg" alt="Angular" matTooltip="Angular" />
+<span fxLayout="row wrap" fxLayoutAlign="center center">
   <img
-    src="./assets/logos/typescript.svg"
-    alt="Typescript"
-    matTooltip="Typescript"
+    *ngFor="let tech of stack"
+    src="{{ tech.path }}"
+    alt="{{ tech.desc }}"
+    matTooltip="{{ tech.desc }}"
+    #tooltip="matTooltip"
+    (click)="tooltip.toggle()"
+    (mouseenter)="tooltip.show()"
+    (mouseleave)="tooltip.hide()"
+    tabindex="0"
+    (focus)="tooltip.show()"
+    (unfocus)="tooltip.hide()"
   />
-  <img src="./assets/logos/html5.svg" alt="HTML" matTooltip="HTML" />
-  <img src="./assets/logos/css3.svg" alt="CSS" matTooltip="CSS" />
 </span>

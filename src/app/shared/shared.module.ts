@@ -7,9 +7,16 @@ import { MaterialModule } from '../material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  imports: [FlexLayoutModule, MaterialModule, RouterModule, ClipboardModule],
+  imports: [
+    FlexLayoutModule,
+    MaterialModule,
+    RouterModule,
+    ClipboardModule,
+    CommonModule,
+  ],
   declarations: [FooterComponent, HeaderComponent, LayoutBasicComponent],
   exports: [
     FooterComponent,
