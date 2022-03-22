@@ -7,9 +7,6 @@ import { onFacebook, onInstagram, onGithub } from 'src/app/utils/hrefs';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  public onFacebook = onFacebook;
-  public onInstagram = onInstagram;
-  public onGithub = onGithub;
   readonly socials: {
     path: string;
     desc: string;
